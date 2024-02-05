@@ -73,6 +73,8 @@ public class EditDurationUI {
                             box.set(position, null);
                         }
 
+                        pixelmon.addFlag("unbreedable");
+
                         EnvyGTSForge.getTradeManager()
                                 .addTrade(player, ((PokemonTrade.Builder) ForgeTrade.builder()
                                         .cost(attribute.getCurrentPrice())
